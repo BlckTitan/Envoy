@@ -4,8 +4,6 @@ import Table from '../../molecule/table/Table';
 import DriverRow from './DriverRow';
 //scss
 import './scss/tableDriversStyle.scss';
-//crap on this
-alert(1)
 const columns = [
   { field: 'id', headerName: '#',},
   { field: 'driverDetail', headerName: 'Driver Detail', },
