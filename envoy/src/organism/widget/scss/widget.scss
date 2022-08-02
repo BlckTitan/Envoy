@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div.widget{
+    @apply w-8/12 flex justify-center 
+    py-5 relative left-32;
+    div.card{
+        @apply mx-9;
+    }
+}
