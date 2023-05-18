@@ -4,7 +4,7 @@ import { useState } from "react";
 import Table from "../../molecule/table/Table";
 import TransactionRow from "./TransactionRow";
 //scss
-import "./scss/tableTransactionStyle.scss";
+import "./css/tableTransactionStyle.css";
 //icon resource
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import FilterListIcon from "@mui/icons-material/FilterList";

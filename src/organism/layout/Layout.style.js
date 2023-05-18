@@ -61,7 +61,7 @@ export const _Main = Styled.div`
     position: relative;
     left: 300px;
     width: calc(100% - 300px);
-    height: 100%;
+    height: 100vh;
 `; 
 export const _Header = Styled.div`
     width: 100%;

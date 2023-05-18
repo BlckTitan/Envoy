@@ -3,7 +3,7 @@ import * as React from 'react';
 import Table from '../../molecule/table/Table';
 import DriverRow from './DriverRow';
 //scss
-import './scss/tableDriversStyle.scss';
+import './scss/tableDriversStyle.css';
 const columns = [
   { field: 'id', headerName: '#',},
   { field: 'driverDetail', headerName: 'Driver Detail', },
