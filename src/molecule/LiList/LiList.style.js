@@ -3,6 +3,7 @@ import Styled from 'styled-components';
 export const _ListItems = Styled.li`
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     width: 100%;
     height: 50px;
     margin-top: 10px;

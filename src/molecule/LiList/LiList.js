@@ -21,7 +21,7 @@ export default function LiList() {
         {linkRef:'/settings', linkTitle:'settings', iconName:<SettingsOutlinedIcon/>,}
     ]);
     return (
-        <ul>
+        <ul className='w-full h-96 flex flex-col items-start mt-36 border-0 rounded-none bg-inherit'>
             {listLinkItems.map((element) => (
                 <_ListItems className={activeLink} onClick={() => setActiveLink('active')}>
                     <Span iconElement={element.iconName}/>
