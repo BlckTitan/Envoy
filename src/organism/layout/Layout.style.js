@@ -15,7 +15,7 @@ export const Sidebar = Styled.div`
     flex-direction: column;
     position: fixed;
     left: 0;
-    width: 300px;
+    width: 400px;
     height: 100%;
     color: #49597D;
     font-size: 20px;
@@ -59,8 +59,8 @@ export const  ProfileInfo = Styled.div`
 //top navigation styling
 export const Main = Styled.div`
     position: relative;
-    left: 300px;
-    width: calc(100% - 300px);
+    left: 400px;
+    width: calc(100% - 400px);
     height: 100vh;
 `; 
 export const Header = Styled.div`
@@ -78,13 +78,14 @@ export const SearchForm = Styled.form`
     align-items: center;
 `;
 export const SearchInput = Styled(Input)`
-    width: 350px;
+    width: 450px;
     height: 40px;
     border-radius: 5px;
     margin-right: 5px;
-    padding: 5px 10px;
+    padding: 1.5rem 1.2rem;
+    border-bottom: 0;
 `;
-export const _Notification = Styled.div`
+export const Notification = Styled.div`
     display: flex;
     align-items: center;
 `;

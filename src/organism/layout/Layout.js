@@ -49,7 +49,7 @@ export default function Layout() {
                         <label for="headerSearch">
                             <SearchInput 
                                 type={"text"}
-                                placeholder={"Search riders, drivers, order IDs, transactions Primestar Logistics"}
+                                placeholder={"Search riders, drivers, order ID's, transactions Primestar Logistics"}
                             />
                         </label>
                         <button type='submit'>
