@@ -1,7 +1,7 @@
 import Styled from "styled-components";
 import Input from "../../atom/input/Input";
 //sidebar navigation styling
-export const _Logo = Styled.div`
+export const Logo = Styled.div`
 display: flex;
 justify-content: center;
 width: 300px;
@@ -10,7 +10,7 @@ height: 60px;
         object-fit: cover;
     }
 `;
-export const _Sidebar = Styled.div`
+export const Sidebar = Styled.div`
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -22,12 +22,12 @@ export const _Sidebar = Styled.div`
     font-weight: 400;
     padding: 20px 0;
 `;
-export const _Nav = Styled.nav`
+export const Nav = Styled.nav`
    width: 300px;
    margin-top: 200px;
 `;
 
-export const _Profile = Styled.div`
+export const Profile = Styled.div`
     width: 100%;
     display: flex;
     position: absolute;
@@ -44,7 +44,7 @@ export const _Profile = Styled.div`
         }
     }
 `;
-export const  _ProfileInfo = Styled.div`
+export const  ProfileInfo = Styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -57,13 +57,13 @@ export const  _ProfileInfo = Styled.div`
     }
 `;
 //top navigation styling
-export const _Main = Styled.div`
+export const Main = Styled.div`
     position: relative;
     left: 300px;
     width: calc(100% - 300px);
     height: 100vh;
 `; 
-export const _Header = Styled.div`
+export const Header = Styled.div`
     width: 100%;
     height: 80px;
     display: flex;
@@ -72,12 +72,12 @@ export const _Header = Styled.div`
     padding: 0 20px;
     color: #49597D;
 `;
-export const _SearchForm = Styled.form`
+export const SearchForm = Styled.form`
     width: 500px;
     display: flex;
     align-items: center;
 `;
-export const _SearchInput = Styled(Input)`
+export const SearchInput = Styled(Input)`
     width: 350px;
     height: 40px;
     border-radius: 5px;
@@ -88,7 +88,7 @@ export const _Notification = Styled.div`
     display: flex;
     align-items: center;
 `;
-export const _HeaderProfile = Styled.div`
+export const HeaderProfile = Styled.div`
    display: flex;
    align-items: center;
    & img{

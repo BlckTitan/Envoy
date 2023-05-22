@@ -7,8 +7,8 @@ import Img from '../../atom/image/Img';
 import LiList from '../../molecule/LiList/LiList';
 //style imports
 import {
-    _Logo, _Sidebar, _Main, _Nav, _Profile, _ProfileInfo,
-    _Header, _Notification, _HeaderProfile, _SearchForm, _SearchInput,
+    Logo, Sidebar, Main, Nav, Profile, ProfileInfo,
+    Header, Notification, HeaderProfile, SearchForm, SearchInput,
 } from './Layout.style';
 //image import
 import logo from '../../imgs/logo.jpg';
@@ -23,31 +23,31 @@ import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined
 export default function Layout() {
     return (
         <>
-            <_Sidebar>
-                <_Logo>
+            <Sidebar>
+                <Logo>
                     <Img src={logo}/>
-                </_Logo>
-                <_Nav>
+                </Logo>
+                <Nav>
                     <LiList/>
-                </_Nav>
-                <_Profile>
+                </Nav>
+                <Profile>
                     <div>
                         <Img src={"https://images.unsplash.com/photo-1646541121625-e6675f5e88b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"} />
                     </div>
-                    <_ProfileInfo>
+                    <ProfileInfo>
                         <Span name={"Hi, Richard"}/>
                         <button>
                             Logout
                             <Span iconElement={<LogoutOutlinedIcon/>}/>
                         </button>
-                    </_ProfileInfo>
-                </_Profile>
-            </_Sidebar>
-            <_Main>
-                <_Header>
-                    <_SearchForm>
+                    </ProfileInfo>
+                </Profile>
+            </Sidebar>
+            <Main>
+                <Header>
+                    <SearchForm>
                         <label for="headerSearch">
-                            <_SearchInput 
+                            <SearchInput 
                                 type={"text"}
                                 placeholder={"Search riders, drivers, order IDs, transactions Primestar Logistics"}
                             />
@@ -55,12 +55,12 @@ export default function Layout() {
                         <button type='submit'>
                             <Span iconElement={<SearchOutlinedIcon/>}/>
                         </button>
-                    </_SearchForm>
-                    <_Notification>
-                        <_HeaderProfile>
+                    </SearchForm>
+                    <Notification>
+                        <HeaderProfile>
                             <Img src={logoPrimestar}/>
                             <Span name={'Primestar Logistics'}/>
-                        </_HeaderProfile>
+                        </HeaderProfile>
                         <div>
                             <Span iconElement={
                                 <Badge color="secondary" overlap="circular" badgeContent="5">
@@ -68,10 +68,10 @@ export default function Layout() {
                                 </Badge>
                             }/>
                         </div>
-                    </_Notification>
-                </_Header>
+                    </Notification>
+                </Header>
                 <Outlet/>
-            </_Main>
+            </Main>
         </>
     )    
 }
