@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Span from '../../atom/span_text/Span';
 import Links from '../../atom/links/Links';
 //atom styles
-import { _ListItems } from './LiList.style';
+import { ListItems } from './LiList.style';
 //icons
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
@@ -23,10 +23,10 @@ export default function LiList() {
     return (
         <ul className='w-full h-96 flex flex-col items-start mt-36 border-0 rounded-none bg-inherit'>
             {listLinkItems.map((element) => (
-                <_ListItems className={activeLink} onClick={() => setActiveLink('active')}>
+                <ListItems className={activeLink} onClick={() => setActiveLink('active')}>
                     <Span iconElement={element.iconName}/>
                     <Links linkName={element.linkTitle} linkAddress={element.linkRef}/>
-                </_ListItems>
+                </ListItems>
             ))}
         </ul>
     )
